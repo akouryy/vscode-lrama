@@ -1,0 +1,25 @@
+{
+  "name": "lrama",
+  "displayName": "vscode-lrama",
+  "description": "Syntax highlighting for Lrama, Bison, and Yacc parser generators",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [ {
+        "id": "lrama",
+        "aliases": [ "Lrama", "lrama" ],
+        "extensions": [ ".y" ],
+        "configuration": "./language-configuration.json"
+      } ],
+    "grammars": [ {
+        "language": "lrama",
+        "scopeName": "source.lrama",
+        "path": "./syntaxes/lrama.tmLanguage"
+      } ]
+  }
+}
